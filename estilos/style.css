@@ -7,7 +7,7 @@
 */
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -17,12 +17,14 @@ body, html {
     background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
+    
 }
 
 main {
     position: relative;
     height: 100vh;
     width: 100vw;
+    
 }
 
 section#login {
@@ -38,17 +40,23 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/metal.jpg);
-    background-size: cover;
-    background-position: left bottom;
+    background: #5f2c82 url(../imagens/metal.jpg)no-repeat;
+    background-size:cover;
+    background-position: center center;
     height: 200px;
+   
+   
 }
 
 section#login > div#formulario {
     display: block;
     padding: 10px;
+    
+    
 }
